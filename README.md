@@ -62,5 +62,5 @@ front-end/style.css  # Minimal SaaS theme with light/dark variables
 ```
 
 ## Credits
-- Created by Rafey — [GitHub](https://github.com/RafeyAhmed01)
+- Created by Rafey
 - Copyright 2026 — Fruit & Category Manager
