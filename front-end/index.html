@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fruit & Category Manager</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <a href="#" class="logo">Fruit & Category Manager</a>
+  <a href="https://github.com/RafeyAhmed01" target="_blank" class="nav-link">Rafey — GitHub</a>
+</nav>
+
+<div class="container-wrapper">
+<div class="card">
+  <div class="header-row">
+    <h1>Fruit Manager</h1>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">☀ / 🌙</button>
+  </div>
+
+  <div class="controls">
+    <select id="methodSelect" onchange="onMethodChange()">
+      <option value="GET">GET</option>
+      <option value="POST">POST</option>
+      <option value="PUT">PUT</option>
+      <option value="DELETE">DELETE</option>
+    </select>
+
+    <select id="entitySelect" onchange="onMethodChange()">
+      <option value="categories">Categories</option>
+      <option value="fruits">Fruits</option>
+    </select>
+
+    <input id="searchInput" type="text" placeholder="Search / ID" />
+
+    <button id="actionBtn" onclick="runAction()">Fetch</button>
+  </div>
+
+  <div id="paramFields" class="fields"></div>
+
+  <table id="dataTable">
+    <thead id="tableHead"><tr><th>ID</th><th>Name</th><th>Category / Extra</th><th>Price</th><th>Quantity</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+</div>
+
+<footer class="footer">
+  <span>© 2026 Rafey — Fruit & Category Manager</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
